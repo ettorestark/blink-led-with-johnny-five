@@ -2,14 +2,21 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Document</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<title></title>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	</head>
 	<body>
-		<button class="btn btn-primary" id="turnOn">Turn on</button>
-		<button class="btn btn-danger" id="turnOff">Turn off</button>
+		<div class="viewport d-flex justify-content-center align-items-center">
+			<div class="form-group">
+				<div class="custom-control custom-switch">
+					<input type="checkbox" class="custom-control-input" id="switch">
+					<label id="switchStatus" class="custom-control-label" for="switch"></label>
+				</div>
+			</div>
+		</div>
 		<script src="socket.io/socket.io.js">
 		</script>
-		<script src="main.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
